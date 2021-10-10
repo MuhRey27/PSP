@@ -1,0 +1,82 @@
+#ourProduct {
+  margin-top: 10rem;
+  .container {
+    position: relative;
+
+    .name-pt {
+      font-size: 1rem;
+      font-weight: map-get($fw, medium);
+      color: $Grey;
+      margin-bottom: 10px;
+    }
+
+    .our-product {
+      position: relative;
+      font-weight: map-get($fw, semibold);
+      color: $Mermu;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 4rem;
+        height: 4px;
+        bottom: -50%;
+        left: 30%;
+        background: $Mermu;
+        border-radius: 10px;
+      }
+    }
+
+    img {
+      margin-top: 5rem;
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5rem;
+
+      .btn-slick {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        transition: 0.3s ease;
+        background: transparent;
+        border: 1px solid $Grey;
+        color: $Grey;
+        margin: 0.3rem;
+
+        &:hover {
+          background-color: $Mertu;
+          color: $White;
+        }
+      }
+    }
+
+    .product {
+      margin-top: 5rem;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .box {
+        width: 10rem;
+        height: 10rem;
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .circle {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+          background-color: $Mertu;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}

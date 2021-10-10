@@ -1,0 +1,52 @@
+#board-directors {
+  margin-top: 8rem;
+
+  .container {
+    .card {
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      border-bottom: 4px solid $Mertu;
+    }
+
+    .card-body {
+      text-align: center;
+      padding: 2rem;
+      h5 {
+        color: $Mertu;
+        font-weight: map-get($fw, semibold);
+        font-size: 1.5rem;
+      }
+
+      p {
+        color: $Grey;
+      }
+    }
+
+    .directors {
+      color: $Mermu;
+      position: relative;
+      font-weight: map-get($fw, semibold);
+      margin-bottom: 5rem;
+
+      text-align: center;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 4rem;
+        height: 4px;
+        bottom: -50%;
+        left: 35%;
+        background: $Mermu;
+        border-radius: 10px;
+      }
+    }
+    @media (max-width: 991px) {
+      padding: 2rem;
+
+      .card {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

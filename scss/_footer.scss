@@ -1,0 +1,53 @@
+footer {
+  margin-top: 10rem;
+  background-color: $Mertu;
+  color: $White;
+  padding: 3rem 0rem 1rem 0;
+  .container {
+    .support-office {
+      margin: 2rem 0;
+      .title {
+        margin-bottom: 1.5rem;
+        h4 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .navigasi {
+      margin-top: 2rem;
+    }
+
+    .links {
+      margin-bottom: 3rem;
+      .link-item {
+        display: flex;
+        flex-direction: column;
+
+        a {
+          text-decoration: none;
+          color: $White;
+          margin-top: 0.5rem;
+          transition: 0.3s ease;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    h5 {
+      margin-top: 5rem;
+      font-weight: map-get($fw, reguler);
+    }
+
+    @media (max-width: 991px) {
+      padding: 2rem;
+
+      h5 {
+        font-size: 1rem;
+      }
+    }
+  }
+}

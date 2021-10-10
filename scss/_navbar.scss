@@ -1,0 +1,75 @@
+@import "color";
+
+header {
+  .navbar {
+    padding: 1.5rem;
+    box-shadow: 9px 10px 26px rgba(0, 0, 0, 0.1);
+    z-index: 999999;
+
+    .navbar-brand {
+      font-size: 1.5rem;
+      img {
+        margin-right: 6px;
+      }
+    }
+
+    a {
+      font-weight: map-get($fw, medium);
+      color: $Mermu;
+    }
+
+    .navbar-toggler {
+      box-shadow: none;
+      border: none;
+
+      .fa-bars {
+        color: $Mermu;
+      }
+    }
+
+    .nav-item {
+      margin-right: 10px;
+
+      .nav-link {
+        &:hover {
+          color: $Mertu;
+        }
+
+        &:focus {
+          color: $Mertu;
+        }
+      }
+    }
+
+    .dropdown-menu {
+      width: 30rem;
+      border-radius: none;
+      border: none;
+        transition: 0.1s ease-in;
+
+        &:hover {
+          background: $Mertu;
+          color: $White;
+          animation: 1s anim;
+
+          border-left: 4px solid orange;
+        }
+      }
+      @keyframes anim {
+        0% {
+          height: 0%;
+          border-style: solid;
+        }
+        100% {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .navbar-nav {
+      margin-top: 1.5rem;
+    }
+  }
+}

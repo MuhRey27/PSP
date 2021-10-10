@@ -1,0 +1,85 @@
+#sec-5 {
+  margin-top: 10rem;
+  background-color: $Mertu;
+  padding: 5rem 0;
+  color: $White;
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    article {
+      h2 {
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: map-get($fw, semibold);
+
+        span {
+          color: rgb(255, 255, 255);
+          position: relative;
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -8%;
+        left: -2%;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        background-color: rgba($color: #ffffff, $alpha: 0.7);
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -5%;
+        right: -3%;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        background-color: rgba($color: #ffffff, $alpha: 0.7);
+      }
+
+      @media (max-width: 768px) {
+        h2 {
+          font-size: 2rem;
+        }
+
+        &::after {
+          top: -10%;
+          left: -5%;
+          width: 10rem;
+          height: 10rem;
+        }
+
+        &::before {
+          bottom: -7%;
+          right: -10%;
+          width: 10rem;
+          height: 10rem;
+        }
+      }
+
+      @media (max-width: 450px) {
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        &::after {
+          top: -10%;
+          left: -5%;
+          width: 8rem;
+          height: 8rem;
+        }
+
+        &::before {
+          bottom: -7%;
+          right: -10%;
+          width: 8rem;
+          height: 8rem;
+        }
+      }
+    }
+  }
+}

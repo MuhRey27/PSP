@@ -1,0 +1,61 @@
+#contact {
+  margin-top: 7rem;
+  .container {
+    .d-flex {
+      position: relative;
+    }
+    .contact-us {
+      color: $Mermu;
+      position: relative;
+      font-weight: map-get($fw, semibold);
+      margin-bottom: 5rem;
+      text-align: center;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 4rem;
+        height: 4px;
+        bottom: -50%;
+        left: 25%;
+        background: $Mermu;
+        border-radius: 10px;
+      }
+    }
+    .text {
+      h4 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        color: $Grey;
+      }
+    }
+
+    @media (max-width: 991px) {
+      padding: 2rem;
+
+      .contact-us {
+        &::after {
+          bottom: -50%;
+          left: 21.5%;
+        }
+      }
+    }
+
+    @media (max-width: 491px) {
+      padding: 2rem;
+
+      .contact-us {
+        &::after {
+          bottom: -50%;
+          left: 22%;
+        }
+      }
+
+      .text {
+        h4 {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}

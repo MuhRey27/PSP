@@ -1,0 +1,77 @@
+#visi-misi {
+  margin-top: 8rem;
+
+  .container {
+    p {
+      letter-spacing: 0.5px;
+      line-height: 25px;
+      margin-top: 2rem;
+    }
+
+    h4 {
+      font-weight: map-get($fw, semibold);
+      font-size: 2.5rem;
+    }
+
+    .visi {
+      .box-visi {
+        background-color: $Mertu;
+        border-radius: 10px;
+        padding: 2rem;
+        color: $White;
+      }
+    }
+
+    .misi {
+      padding-left: 5rem;
+      .box-misi {
+        h4 {
+          color: $Mertu;
+          margin-top: 2rem;
+        }
+
+        p {
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 6px;
+            left: -6%;
+            height: 4.7rem;
+            background-color: $Mertu;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 991px) {
+      padding: 2rem;
+
+      .misi {
+        padding: 2.5rem;
+        margin-top: 2rem;
+
+        .box-misi {
+          p {
+            padding-left: 1rem;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 374px) {
+      padding: 1rem;
+
+      .misi {
+        .box-misi {
+          p {
+            &::before {
+              height: 8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

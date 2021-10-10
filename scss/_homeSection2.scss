@@ -1,0 +1,80 @@
+#sec-2 {
+  margin-top: 10rem;
+
+  .container {
+    .about {
+      .about-us {
+        position: relative;
+        font-weight: map-get($fw, semibold);
+        color: $Mermu;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 4rem;
+          height: 4px;
+          bottom: -50%;
+          left: 0;
+          background: $Mermu;
+          border-radius: 10px;
+        }
+      }
+      .name-pt {
+        margin-top: 4rem;
+        color: $Birtu;
+        font-weight: map-get($fw, semibold);
+      }
+      .paragraf-about {
+        margin-top: 1.5rem;
+        padding-right: 2rem;
+        word-spacing: 4px;
+      }
+    }
+
+    .img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 991px) {
+      .about {
+        padding: 1rem;
+
+        .paragraf-about {
+          padding-right: 0;
+        }
+      }
+    }
+
+    @media (max-width: 608px) {
+      .about {
+        padding: 2rem;
+      }
+
+      .img {
+        padding: rem;
+        img {
+          width: 25rem;
+        }
+      }
+    }
+
+    @media (max-width: 475px) {
+      .img {
+        img {
+          width: 20rem;
+        }
+      }
+    }
+
+    @media (max-width: 356px) {
+      .img {
+        img {
+          width: 17rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+#history {
+  margin-top: 6rem;
+
+  .container {
+    .row {
+      margin-bottom: 4rem;
+
+      .right {
+        text-align: right;
+      }
+
+      .text {
+        h4 {
+          margin-bottom: 1rem;
+          font-weight: map-get($fw, bold);
+          color: $Mertutu;
+        }
+
+        p {
+          letter-spacing: 0.5px;
+          line-height: 25px;
+        }
+      }
+    }
+    @media (max-width: 991px) {
+      padding: 2rem;
+    }
+  }
+}

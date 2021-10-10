@@ -1,0 +1,80 @@
+#sec-4 {
+  margin-top: 7rem;
+  .container {
+    .our-project {
+      position: relative;
+      margin-top: 5rem;
+      font-weight: map-get($fw, semibold);
+      color: $Mermu;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 4rem;
+        height: 4px;
+        bottom: -50%;
+        left: 30%;
+        background: $Mermu;
+        border-radius: 10px;
+      }
+    }
+
+    .row {
+      margin-top: 8rem;
+    }
+
+    .card {
+      border-radius: 10px 10px 10px 10px;
+
+      margin: 2rem 1rem;
+
+      .card-body {
+        padding: 2rem;
+      }
+      .card-title {
+        color: $Birmutu;
+        font-weight: map-get($fw, semibold);
+      }
+
+      .card-text {
+        color: $Grey;
+        font-weight: map-get($fw, medium);
+        margin-top: 1rem;
+      }
+
+      .button {
+        display: flex;
+        align-items: center;
+        color: $Mertu;
+        margin-top: 2rem;
+
+        i {
+          font-size: 1.5rem;
+          margin-right: 0.5rem;
+          transition: 0.2s ease;
+        }
+
+        a {
+          text-decoration: none;
+          color: $Mertu;
+          font-size: 1.2rem;
+          font-weight: map-get($fw, reguler);
+          transition: 0.2s ease;
+        }
+
+        &:hover {
+          a {
+            color: $Mermu;
+          }
+          i {
+            color: $Mermu;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: 2rem;
+    }
+  }
+}

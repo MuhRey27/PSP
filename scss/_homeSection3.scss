@@ -1,0 +1,71 @@
+#sec-3 {
+  background-color: $Mertu;
+  margin-top: 12rem;
+  color: $White;
+  padding: 0rem 0rem 6rem 0rem;
+
+  .container {
+    .our-service {
+      position: relative;
+      margin-top: 5rem;
+      font-weight: map-get($fw, semibold);
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 4rem;
+        height: 4px;
+        bottom: -50%;
+        left: 30%;
+        background: $White;
+        border-radius: 10px;
+      }
+    }
+
+    .row {
+      margin-top: 5rem;
+
+      .service {
+        display: flex;
+        padding: 1rem;
+        align-items: center;
+      }
+      img {
+        margin-right: 1.2rem;
+      }
+
+      .title {
+        margin-top: 1rem;
+
+        .title-heading {
+          font-weight: map-get($fw, medium);
+        }
+      }
+    }
+
+    @media (max-width: 991px) {
+      padding: 2rem;
+    }
+
+    @media (max-width: 500px) {
+      .service {
+        display: flex;
+        padding: 0rem;
+
+        img {
+          width: 4.5rem;
+        }
+
+        .title {
+          h4 {
+            font-size: 1.1rem;
+          }
+
+          p {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}

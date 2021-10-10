@@ -1,0 +1,67 @@
+#banner {
+  position: relative;
+  height: 25rem;
+  background: url("/assets/img/bg-hero.svg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .container {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba($color: #000000, $alpha: 0.4);
+    }
+
+    .text {
+      text-align: center;
+      z-index: 999;
+      color: $White;
+      h2 {
+        font-size: 6rem;
+      }
+
+      h3 {
+        margin-top: 1rem;
+
+        span {
+          background-color: $White;
+          color: $Mertu;
+          font-weight: map-get($fw, semibold);
+          padding: 0.5rem 1rem;
+          border-radius: 6px;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    @media (max-width: 800px) {
+      .text {
+        h2 {
+          font-size: 4rem;
+        }
+
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    @media (max-width: 800px) {
+      .text {
+        h2 {
+          font-size: 3rem;
+        }
+
+        h3 {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
